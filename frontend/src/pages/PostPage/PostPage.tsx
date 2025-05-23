@@ -7,7 +7,7 @@ import { PostModal } from "@components/ModalAddPost/PostModal";
 export const PostPage = observer(() => {
   const createNewPost = () => {
     ModalStore.modalOpen(null);
-  }; // что я наделал...git add .
+  }; // что я наделал...
   return (
     <Box
       sx={{
