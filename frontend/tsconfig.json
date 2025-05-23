@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".", // обязательно
+    "types": ["node"],
+    "paths": {
+      "@stores/*": ["src/stores/*"],
+      "@api/*": ["src/api/*"],
+      "@components/*": ["src/components/*"],
+      "@typings/*": ["src/types/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  }
+}
