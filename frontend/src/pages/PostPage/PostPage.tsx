@@ -2,12 +2,12 @@ import { observer } from "mobx-react-lite";
 import PostStore from "@stores/PostStore";
 import ModalStore from "@stores/ModalStore";
 import { PostCard } from "@components/PostCard/PostCard";
-import { Box, Button} from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { PostModal } from "@components/ModalAddPost/PostModal";
 export const PostPage = observer(() => {
   const createNewPost = () => {
     ModalStore.modalOpen(null);
-  };
+  }; // что
   return (
     <Box
       sx={{
