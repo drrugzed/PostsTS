@@ -48,7 +48,7 @@ export const RegisterPage = observer(() => {
           fullWidth
           margin="normal"
           label="Email"
-          value={RegisterformData.username}
+          value={RegisterformData.email}
           onChange={(e) =>
             setRegisterFormData({ ...RegisterformData, email: e.target.value })
           }
@@ -58,7 +58,8 @@ export const RegisterPage = observer(() => {
           fullWidth
           margin="normal"
           label="password"
-          value={RegisterformData.username}
+          value={RegisterformData.password}
+          type='password'
           onChange={(e) =>
             setRegisterFormData({
               ...RegisterformData,
@@ -71,7 +72,8 @@ export const RegisterPage = observer(() => {
           fullWidth
           margin="normal"
           label="password"
-          value={RegisterformData.username}
+          value={RegisterformData.password2}
+          type='password'
           onChange={(e) =>
             setRegisterFormData({
               ...RegisterformData,
